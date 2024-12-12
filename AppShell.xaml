@@ -4,22 +4,27 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:StrugariSiminaLab7"
-    Shell.FlyoutBehavior="Flyout"
+    Shell.FlyoutBehavior="Disabled"
     Title="StrugariSiminaLab7">
 
     <TabBar>
         <ShellContent
         Title="Welcome"
         ContentTemplate="{DataTemplate local:MainPage}"
-        />
+         />
+
         <ShellContent
-        Title="About"
-        ContentTemplate="{DataTemplate local:AboutPage}"
-        />
+         Title="My Shopping Lists"
+         ContentTemplate="{DataTemplate local:ListEntryPage}"
+          />
         <ShellContent
-        Title="My Shopping Lists"
-        ContentTemplate="{DataTemplate local:ListEntryPage}"
-        />
+         Title="My Shops"
+         ContentTemplate="{DataTemplate local:ShopEntryPage}"
+         />
+        <ShellContent
+          Title="About"
+         ContentTemplate="{DataTemplate local:AboutPage}"
+          />
 
     </TabBar>
 
